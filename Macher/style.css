@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+  
+    font-family: 'Fugaz One', cursive;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: unset; 
+ height: 100vh;
+
+    margin: 0;
+}
+ .conteiner{ 
+     border-radius: 2px; 
+   box-shadow: 3px 3px  200px rgba(7, 6, 6, 0.97);
+   width: 300px
+   ;
+  
+}
+.titel{
+    margin: 0;
+}
+.subtitel{
+    background-color: blue;
+    color: cornsilk;
+    display: inline-block;
+}
+.header{
+    background-color:blue;
+    color: white;
+    padding: 30px 20px;
+
+}
+.header input{
+    background-color: rgb(25, 163, 228);
+    border: 0;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.userlist{
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.userlist li{
+    display: flex;
+    padding: 20px;
+
+}
+.userlist img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.userlist li:not(:last-of-type){
+border-bottom: 1px solid rgb(199, 28, 28);
+}
+.userlist li.hide{
+    display: none;
+    background-color: chartreuse;
+}
+#btn{
+    font-family: 'Fugaz One', cursive;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: unset;
+    margin-top: 25px;
+    margin-left: 50%;
+    border-radius: 50%;
+    background-color: aquamarine;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)3s;
+}
+#btn:hover{
+    background-color: rgb(147, 106, 185);
+    transform:scale(2) ;
+}
